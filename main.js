@@ -4,16 +4,18 @@ const email=document.getElementById('#email');
 const mensagen=document.getElementById('#mensagen');
 
 $(document).ready(function(){
-    $('#name').mask('',{
+    /*
+    $('#name').mask({
         placeholder: 'Ex: Joao Pinto'
-    });
+    });*/
     $('#tel').mask('(00) 00000-0000',{
         placeholder:'(69) 7894-5321'
     });
-    $('#email').mask('',{
+    /*
+    $('#email').mask({
         placeholder:'ex: exemplo@exmplo.com'
     })
-
+*/
 });
 $('form').validate({
     rules:{
