@@ -102,6 +102,9 @@ footer{
     width: 100%;
 }
 @media only screen and (max-width: 767px){
+    body{
+        animation: breakpoint 2s linear;
+    }
     .container{
         display: block;
     }
@@ -210,6 +213,13 @@ footer{
     100% {
         transform: rotate(360deg);
     }
+}
+@keyframes breakpoint {
+    0% { width: 10%; height: 10%; }
+    25% { width: 20%; height: 30%; }
+    50% { width: 33.33%; height: 70%; }
+    75% { width: 66.66%; height: 85%; }
+    100% { width: 100%; height: 100%; }
 }
 .carousel-indicators{
     background-color: rgba(0, 0, 0, 0.5);
